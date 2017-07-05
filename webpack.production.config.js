@@ -21,13 +21,8 @@ const config = {
 				exclude: /node_modules/,
 			},
 			{
-				test: /\.css$/,
-				use: ['style-loader', 'css-loader'],
-			},
-			{
-				test: /\.scss$/,
+				test: /\.(css|scss)$/,
 				use: ['style-loader', 'css-loader', 'sass-loader'],
-				exclude: /node_modules/,
 			},
 			{
 				test: /\.(eot|ttf|woff|woff2)$/,
@@ -35,7 +30,7 @@ const config = {
 			},
 			{
 				test: /\.svg$/,
-				use: 'file-loader?name=svg/[name].[ext]',
+				use: 'file-loader?name=img/svg/[name].[ext]',
 			},
 		],
 	},
