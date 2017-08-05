@@ -8,7 +8,7 @@ const	app = express();
 const proxy = httpProxy.createProxyServer();
 
 const isProduction = process.env.NODE_ENV === 'production';
-const port = isProduction ? process.env.PORT : 3013;
+const port = isProduction ? process.env.PORT : 3000;
 const	publicPath = path.join(__dirname, 'client');
 
 app.use(bodyParser.json());
@@ -35,5 +35,5 @@ proxy.on('error', (e) => {
 });
 
 app.listen(port, () => {
-	console.info(`OverEasyCSS server listening on port ${port}`);
+	console.info(`React-Boilerplate server listening on port ${port}`);
 });
