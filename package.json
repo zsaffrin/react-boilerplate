@@ -1,10 +1,11 @@
 {
   "name": "react-boilerplate",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "React app starter kit",
   "scripts": {
     "build": "NODE_ENV=production webpack -p --config webpack.production.config.js",
-    "start": "node server.js",
+    "start-dev": "node server.js",
+    "start": "NODE_ENV=production node server.js",
     "test": "jest --verbose",
     "test:watch": "jest --watch --verbose"
   },
